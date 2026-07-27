@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.descriptionSection {
+    background-color: rgba(26, 26, 26, 0.6);
+}
