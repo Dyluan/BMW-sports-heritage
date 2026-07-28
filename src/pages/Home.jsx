@@ -1,5 +1,6 @@
 import './home.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import bigBimmer from '../assets/bmw_m1_big.jpg';
 import leftArrow from '../assets/left-arrow.png';
 import engineBay from '../assets/engine-bay.png';
@@ -78,7 +79,7 @@ function Home() {
               <div className="middle text-[#E5E2E1] font-[Anybody] font-bold text-[32px] mb-3">Création de BMW Motorsport</div>
               <div className="bottom font-[Geist] text-[#E9BCB6] text-[16px] text-right">Une petite équipe de 35 passionnés s'installe à Munich avec un seul but : dominer la compétition mondiale.</div>
             </div>
-            <div className="divider w-0.5 mx-2 flex flex-col items-center justify-center">
+            <div className="divider w-0.5 mx-12 flex flex-col items-center justify-center">
               <div className="ball h-4 w-4 bg-[#E20613] rounded-[50%]"></div>
             </div>
             <div className="right max-w-[50%] w-[50%]">
@@ -89,7 +90,7 @@ function Home() {
             <div className="left max-w-[50%] w-[50%] flex justify-end">
               <img src={m1} alt="m1 Procar" />
             </div>
-            <div className="divider w-0.5 mx-2 flex flex-col items-center justify-center">
+            <div className="divider w-0.5 mx-12 flex flex-col items-center justify-center">
               <div className="ball h-4 w-4 bg-[#0568B5] rounded-[50%]"></div>
             </div>
             <div className="right flex flex-col items-start max-w-[50%] w-[50%]">
@@ -102,9 +103,9 @@ function Home() {
             <div className="left flex flex-col items-end max-w-[50%] w-[50%]">
               <div className="top text-[#FFB4AA] font-[JetBrains_Mono] text-2xl mb-2">1987</div>
               <div className="middle text-[#E5E2E1] font-[Anybody] font-bold text-[32px] mb-3">M3 E30 : Reine du DTM</div>
-              <div className="bottom font-[Geist] text-[#E9BCB6] text-[16px] text-right">Une petite équipe de 35 passionnés s'installe à Munich avec un seul but : dominer la compétition mondiale.</div>
+              <div className="bottom font-[Geist] text-[#E9BCB6] text-[16px] text-right">La voiture de tourisme la plus victorieuse de l'histoire. Elle a redéfini le concept de berline sportive pour toujours.</div>
             </div>
-            <div className="divider w-0.5 mx-2 flex flex-col items-center justify-center">
+            <div className="divider w-0.5 mx-12 flex flex-col items-center justify-center">
               <div className="ball h-4 w-4 bg-[#2D2A77] rounded-[50%]"></div>
             </div>
             <div className="right max-w-[50%] w-[50%]">
@@ -115,21 +116,39 @@ function Home() {
             <div className="left max-w-[50%] w-[50%] flex justify-end">
               <img src={v12} alt="v12 LMR" />
             </div>
-            <div className="divider w-0.5 mx-2 flex flex-col items-center justify-center">
+            <div className="divider w-0.5 mx-12 flex flex-col items-center justify-center">
               <div className="ball h-4 w-4 bg-[#E20613] rounded-[50%]"></div>
             </div>
             <div className="right flex flex-col items-start max-w-[50%] w-[50%]">
-              <div className="top text-[#A2C9FF] font-[JetBrains_Mono] text-2xl mb-2">1978</div>
-              <div className="middle text-[#E5E2E1] font-[Anybody] font-bold text-[32px] mb-3">L'Avènement de la M1</div>
-              <div className="bottom font-[Geist] text-[#E9BCB6] text-[16px] text-left">La première voiture à porter fièrement le badge M. Un chef- d'œuvre à moteur central conçu pour la piste et la route.</div>
+              <div className="top text-[#A2C9FF] font-[JetBrains_Mono] text-2xl mb-2">1999</div>
+              <div className="middle text-[#E5E2E1] font-[Anybody] font-bold text-[32px] mb-3">Triomphe au Mans</div>
+              <div className="bottom font-[Geist] text-[#E9BCB6] text-[16px] text-left">La consécration ultime avec la victoire de la V12 LMR aux 24 Heures du Mans, prouvant l'endurance de l'ingénierie M.</div>
             </div>
           </div>
         </div>
       </div>
       {/* partie "rejoignez la légende" */}
-      <div className="joinSection">
-        
+      <div className="joinSection w-full">
+        <div className="content join mt-32 pt-24 w-full flex flex-col items-center gap-8">
+          <div className="top uppercase italic tracking-[-3.2px] font-[Anybody] font-extrabold text-[80px] text-[#E5E2E1]">rejoignez la <span className="text-[#E20613]">légende</span></div>
+          <div className="middle text-[#E9BCB6] font-[Geist] text-[16px] max-w-[648px] text-center">Plongez dans les archives, explorez les modèles iconiques et vivez l'émotion de la piste à travers notre collection exclusive.</div>
+          <div className="bottom flex flex-row items-center gap-6">
+            <div className="left">
+              <button className="uppercase bg-[#E5E2E1] hover:bg-[#E20613] hover:text-[#E5E2E1] text-[#131313] font-[JetBrains_Mono] text-[18px] font-bold px-12 py-5 cursor-pointer">voir les légendes</button>
+            </div>
+            <div className="right">
+              <button className="bg-transparent border-[#E5E2E1] border-2 uppercase text-[#E5E2E1] font-[JetBrains_Mono] hover:bg-[#E5E2E1] hover:text-[#131313] px-12 py-5 text-[18px] font-bold cursor-pointer">l'esprit m</button>
+            </div>
+          </div>
+          <div className="filigrane-container">
+            <div className="filigrane-scroll">
+              <span className="filigrane-text">BMW MOTORSPORTS BMW MOTORSPORTS BMW MOTORSPORTS BMW MOTORSPORTS </span>
+              <span className="filigrane-text">BMW MOTORSPORTS BMW MOTORSPORTS BMW MOTORSPORTS BMW MOTORSPORTS </span>
+            </div>
+          </div>
+        </div>
       </div>
+      <Footer />
     </div>
   )
 }

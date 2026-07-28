@@ -27,7 +27,7 @@ function Header() {
         <Link to="/m-spirit" className={getLinkClass("/m-spirit")}>M Spirit</Link>
       </div>
       <div className="right">
-        <button className="bg-[#E20613] text-[#FFF3F2] font-[JetBrains_Mono] font-bold text-[16px] px-5.5 py-3">JOIN CLUB</button>
+        <button className="bg-[#E20613] text-[#FFF3F2] hover:bg-[#0066B3] cursor-pointer font-[JetBrains_Mono] font-bold text-[16px] px-5.5 py-3">JOIN CLUB</button>
       </div>
     </div>
     <div className="bottomLine w-full h-[1px] bg-gray-500 mb-0"></div>

@@ -3,3 +3,45 @@
 .descriptionSection {
     background-color: rgba(26, 26, 26, 0.6);
 }
+.join {
+    background-color: rgba(226, 6, 19, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+/* Filigrane marquee effect */
+.filigrane-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+    bottom: 100px;
+    line-height: 1;
+    pointer-events: none;
+    margin-bottom: -60px;
+}
+
+.filigrane-scroll {
+    display: inline-block;
+    animation: scroll-left 60s linear infinite;
+}
+
+.filigrane-text {
+    font-family: 'Anybody', sans-serif;
+    font-weight: 900;
+    font-size: 180px;
+    line-height: 1;
+    color: #E5E2E1;
+    opacity: 0.15;
+    display: inline-block;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
