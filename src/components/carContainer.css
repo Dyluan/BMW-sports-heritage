@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.carImg {
+  transition: background-size 1s ease;
+  background-position: center;
+}
+
+.carImg:hover {
+  background-size: 105%;
+}
+
+.mainCar:hover {
+  transform: translateY(-10px);
+  background-color: #181818;
+}
