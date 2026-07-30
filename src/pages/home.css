@@ -45,3 +45,18 @@
         transform: translateX(-50%);
     }
 }
+
+.chronoContent {
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100vw); /* Starts off-screen to the left */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Ends at its normal position */
+        opacity: 1;
+    }
+}

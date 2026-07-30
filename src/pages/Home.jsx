@@ -73,7 +73,7 @@ function Home() {
         </div>
         <div className="chronoContent relative flex flex-col">
           <div className="line absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-0.5 bg-[#343434]"></div>
-          <div className="content relative flex items-center">
+          <div className="chronoContent relative flex items-center">
             <div className="left flex flex-col items-end max-w-[50%] w-[50%]">
               <div className="top text-[#FFB4AA] font-[JetBrains_Mono] text-2xl mb-2">1972</div>
               <div className="middle text-[#E5E2E1] font-[Anybody] font-bold text-[32px] mb-3">Création de BMW Motorsport</div>
@@ -86,7 +86,7 @@ function Home() {
               <img src={garage} alt="garage" />
             </div>
           </div>
-          <div className="content relative flex items-center pt-24">
+          <div className="chronoContent relative flex items-center pt-24">
             <div className="left max-w-[50%] w-[50%] flex justify-end">
               <img src={m1} alt="m1 Procar" />
             </div>
@@ -99,7 +99,7 @@ function Home() {
               <div className="bottom font-[Geist] text-[#E9BCB6] text-[16px] text-left">La première voiture à porter fièrement le badge M. Un chef- d'œuvre à moteur central conçu pour la piste et la route.</div>
             </div>
           </div>
-          <div className="content relative flex items-center pt-24">
+          <div className="chronoContent relative flex items-center pt-24">
             <div className="left flex flex-col items-end max-w-[50%] w-[50%]">
               <div className="top text-[#FFB4AA] font-[JetBrains_Mono] text-2xl mb-2">1987</div>
               <div className="middle text-[#E5E2E1] font-[Anybody] font-bold text-[32px] mb-3">M3 E30 : Reine du DTM</div>
@@ -112,7 +112,7 @@ function Home() {
               <img src={e30} alt="e30 DTM" />
             </div>
           </div>
-          <div className="content relative flex items-center pt-24">
+          <div className="chronoContent relative flex items-center pt-24">
             <div className="left max-w-[50%] w-[50%] flex justify-end">
               <img src={v12} alt="v12 LMR" />
             </div>
