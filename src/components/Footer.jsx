@@ -1,5 +1,9 @@
 import './footer.css';
 import { Link } from 'react-router-dom';
+import email from '../assets/email.png';
+import internet from '../assets/internet.png';
+import github from '../assets/github.svg';
+import linkedin from '../assets/linkedin.svg';
 
 function Footer() {
   return (
@@ -19,15 +23,39 @@ function Footer() {
         </div>
         <div className="right flex flex-col">
           <div className="top font-[JetBrains_Mono] text-[#E20613] text-[12px] font-bold tracking-[1.2px]">CONTACT ME</div>
-          <div className="middle flex flex-col text-[#E9BCB6] font-[Geist] text-[16px] gap-2 pt-4">
-            <div className="info">Dylan Jonckheere</div>
-            <div className="email">dylan.jonckheere.pro@gmail.com</div>
-            <div className="website"><Link to="https://dily-projects.com">Main Website</Link></div>
-            <div className="website"><Link to="https://github.com/Dyluan">GitHub</Link></div>
-            <div className="website"><Link to="https://www.linkedin.com/in/dylan-jonckheere/">LinkedIn</Link></div>
+          <div className="middle flex flex-col text-[#E9BCB6] font-[Geist] text-[16px] gap-2 pt-6">
+            <div className="email flex flex-row items-center gap-2">
+              <div className="logo"><img src={email} alt="email logo" /></div>
+              <div className="text">dylan.jonckheere.pro@gmail.com</div>
+            </div>
+            <div className="website flex flex-row items-center gap-2">
+              <div className="logo">
+                <img src={internet} alt="internet logo" className='h-3 w-3' />
+              </div>
+              <div className="link">
+                <Link to="https://dily-projects.com">Main Website</Link>
+              </div>
+            </div>
+            <div className="github flex flex-row items-center gap-2">
+              <div className="logo">
+                <img src={github} alt="github" className='h-3 w-3' />
+              </div>
+              <div className="link">
+                <Link to="https://github.com/Dyluan">GitHub</Link>
+              </div>
+            </div>
+            <div className="linkedin flex flex-row items-center gap-2">
+              <div className="logo">
+                <img src={linkedin} alt="linkedin" className='h-3 w-3' />
+              </div>
+              <div className="link">
+                <Link to="https://www.linkedin.com/in/dylan-jonckheere/">LinkedIn</Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div className="bottom bg-[#0E0E0E] w-full flex flex-row justify-center text-[#E9BCB6] font-[Geist] text-[16px]">© Dylan Jonckheere 2026</div>
     </div>
   )
 }

@@ -142,8 +142,8 @@ function Home() {
           </div>
           <div className="filigrane-container">
             <div className="filigrane-scroll">
-              <span className="filigrane-text">BMW MOTORSPORTS BMW MOTORSPORTS BMW MOTORSPORTS BMW MOTORSPORTS </span>
-              <span className="filigrane-text">BMW MOTORSPORTS BMW MOTORSPORTS BMW MOTORSPORTS BMW MOTORSPORTS </span>
+              <span className="filigrane-text">BMW MOTORSPORT BMW MOTORSPORT BMW MOTORSPORT BMW MOTORSPORT </span>
+              <span className="filigrane-text">BMW MOTORSPORT BMW MOTORSPORT BMW MOTORSPORT BMW MOTORSPORT </span>
             </div>
           </div>
         </div>
