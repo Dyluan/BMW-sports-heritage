@@ -1,12 +1,10 @@
 import './carContainer.css';
-import BMW328 from '../assets/328.png';
 
 function CarContainer({ image, date, title, description, power, speed }) {
   return(
     <div className="mainCar border border-[#ffffff1a] max-w-[268px] bg-[#1E1E1E]">
       <div className="top">
         <div className="carImg bg-cover max-w-[268px] max-h-[201px] h-[201px]" style={{ backgroundImage: `url(${image})` }}>
-          {/* <img src={BMW328} alt="BMW 328" /> */}
           <div className="carDate flex flex-row items-center relative -bottom-4 left-4">
             <div className="dateLeft w-1 self-stretch bg-[#FFB4AA]"></div>
             <div className="dateText px-3 py-1 font-[JetBrains_Mono] text-[16px] text-[#E5E2E1] bg-black">{date}</div>

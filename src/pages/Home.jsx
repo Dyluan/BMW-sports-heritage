@@ -9,6 +9,7 @@ import garage from '../assets/garage.png';
 import m1 from '../assets/m1-side.png';
 import e30 from '../assets/e30.png';
 import v12 from '../assets/v12lmr.png';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return(
@@ -21,10 +22,12 @@ function Home() {
           <div className="heroBottom flex flex-row items-center gap-8">
             <div className="heroButton">
               <button className="bg-[#E20613] text-[18px] font-[JetBrains_Mono] text-[#FFF3F2] px-10 py-5 flex flex-row items-center gap-4 hover:bg-[#0066B3] cursor-pointer">
-                <div className="heroButtonText">Découvrir les légendes</div>
+                <div className="heroButtonText">
+                  <Link to="/legends">Découvrir les légendes</Link>
+                </div>
                 <div className="heroButtonImg"><img src={leftArrow} alt="arrow" /></div>
               </button>
-              </div>
+            </div>
             <div className="heroBottomText flex flex-row items-center gap-4">
               <div className="heroBottomTextLeft w-12 h-px bg-[#AF8782]"></div>
               <div className="heroBottomTextRight text-[#E9BCB6] font-[Geist] text-[16px]">La quintessence de la performance</div>
@@ -134,7 +137,9 @@ function Home() {
           <div className="middle text-[#E9BCB6] font-[Geist] text-[16px] max-w-[648px] text-center">Plongez dans les archives, explorez les modèles iconiques et vivez l'émotion de la piste à travers notre collection exclusive.</div>
           <div className="bottom flex flex-row items-center gap-6">
             <div className="left">
-              <button className="uppercase bg-[#E5E2E1] hover:bg-[#E20613] hover:text-[#E5E2E1] text-[#131313] font-[JetBrains_Mono] text-[18px] font-bold px-12 py-5 cursor-pointer">voir les légendes</button>
+              <Link to="/legends" className=" btn uppercase bg-[#E5E2E1] hover:bg-[#E20613] hover:text-[#E5E2E1] text-[#131313] font-[JetBrains_Mono] text-[18px] font-bold px-12 py-5 cursor-pointer">
+                voir les légendes
+              </Link>
             </div>
             <div className="right">
               <button className="bg-transparent border-[#E5E2E1] border-2 uppercase text-[#E5E2E1] font-[JetBrains_Mono] hover:bg-[#E5E2E1] hover:text-[#131313] px-12 py-5 text-[18px] font-bold cursor-pointer">l'esprit m</button>

@@ -23,7 +23,7 @@ function Legends() {
           </div>
           <div className="bottom text-[#E9BCB6] font-[Geist] text-[16px]">Explorez l'ADN du sport automobile. De la route au circuit, ces machines ont redéfini les limites de l'ingénierie et gravé le nom BMW M dans l'histoire.</div>
         </div>
-        <div className="middle mt-16 flex flex-row gap-6">
+        <div className="middle mt-16 flex flex-row gap-6 max-w-full flex-wrap">
           <CarContainer 
             className="carContainer"
             image={BMW328} 
