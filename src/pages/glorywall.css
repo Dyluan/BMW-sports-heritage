@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+.bmwColors {
+  background: linear-gradient(to right, #0066B3, #282572, #E20613);
+}
+
+.imageContainer {
+  overflow: hidden;
+}
+
+.imageContainer img {
+  filter: sepia(0%);
+  transform: scale(1);
+
+  object-fit: cover;
+
+  transition:
+    filter 500ms ease,
+    transform 500ms ease;
+}
+
+.imageContainer:hover img {
+  filter: sepia(100%);
+  transform: scale(1.05);
+}
+
+.imageContainerReal {
+  overflow: hidden;
+}
+
+.imageContainerReal img {
+  filter: grayscale(100%);
+
+  object-fit: cover;
+
+  transition: filter 1s ease,
+}
+
+.imageContainerReal:hover img {
+  filter: grayscale(0%);
+}
+
+.topRight {
+  overflow: hidden;
+}
+
+.topRight img {
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.topRight img {
+  filter: grayscale(100%);
+
+  object-fit: cover;
+
+  transition: filter 1s ease,
+}
+
+.topRight:hover img {
+  filter: grayscale(0%);
+}
