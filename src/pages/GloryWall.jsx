@@ -5,6 +5,8 @@ import lmr from '../assets/lmr-glory.png';
 import bmw328 from '../assets/328-glory.png';
 import e30 from '../assets/e30-glory.jpg';
 import nelson from '../assets/nelson.jpg';
+import cup from '../assets/cup.png';
+import { Link } from 'react-router-dom';
 
 function GloryWall() {
   return(
@@ -17,19 +19,19 @@ function GloryWall() {
             <div className="topTitle text-[#E5E2E1] font-[Anybody] font-extrabold tracking-[-3.2px] text-[80px] my-3.5 uppercase italic">le mur de la gloire</div>
             <div className="topDescription text-[#E9BCB6] font-[Geist] text-[18px] max-w-[660px]">Une célébration de l'ingénierie suprême et des pilotes légendaires qui ont gravé le nom de M Motorsport dans l'histoire éternelle de la course automobile.</div>
             <div className="topBottom flex flex-row w-full my-20 gap-6">
-              <div className="topContainer border-2 border-[#E20613] w-[270px] flex flex-col text-[#FFB4AA] gap-2 py-8 px-8 bg-[#1A1A1A]">
+              <div className="topContainer border-2 border-[#E20613] w-[270px] flex flex-col text-[#FFB4AA] gap-2 py-8 px-8 bg-[#1a1a1a] hover:bg-[#201F1F] hover:border-[#282828]">
                 <div className="containerTop font-[JetBrains_Mono] text-[24px] font-medium text-2xl">1972</div>
                 <div className="containerBottom font-[JetBrains_Mono] font-bold text-[12px] tracking-[1.2px] uppercase">fondation</div>
               </div>
-              <div className="topContainer border-2 border-[#0568B5] w-[270px] flex flex-col text-[#FFB4AA] gap-2 py-8 px-8 bg-[#1A1A1A]">
+              <div className="topContainer border-2 border-[#0568B5] w-[270px] flex flex-col text-[#FFB4AA] gap-2 py-8 px-8 bg-[#1A1A1A] hover:bg-[#201F1F] hover:border-[#282828]">
                 <div className="containerTop font-[JetBrains_Mono] text-[24px] font-medium text-2xl">25+</div>
                 <div className="containerBottom font-[JetBrains_Mono] font-bold text-[12px] tracking-[1.2px] uppercase">titres dtm</div>
               </div>
-              <div className="topContainer border-2 border-[#282572] w-[270px] flex flex-col text-[#FFB4AA] gap-2 py-8 px-8 bg-[#1A1A1A]">
+              <div className="topContainer border-2 border-[#282572] w-[270px] flex flex-col text-[#FFB4AA] gap-2 py-8 px-8 bg-[#1A1A1A] hover:bg-[#201F1F] hover:border-[#282828]">
                 <div className="containerTop font-[JetBrains_Mono] text-[24px] font-medium text-2xl">19</div>
                 <div className="containerBottom font-[JetBrains_Mono] font-bold text-[12px] tracking-[1.2px] uppercase">victoires nürburgring</div>
               </div>
-              <div className="topContainer border-2 border-[#E20613] w-[270px] flex flex-col text-[#FFB4AA] gap-2 py-8 px-8 bg-[#1A1A1A]">
+              <div className="topContainer border-2 border-[#E20613] w-[270px] flex flex-col text-[#FFB4AA] gap-2 py-8 px-8 bg-[#1A1A1A] hover:bg-[#201F1F] hover:border-[#282828]">
                 <div className="containerTop font-[JetBrains_Mono] text-[24px] font-medium text-2xl">∞</div>
                 <div className="containerBottom font-[JetBrains_Mono] font-bold text-[12px] tracking-[1.2px] uppercase">PASSION M</div>
               </div>
@@ -83,12 +85,22 @@ function GloryWall() {
               <div className="topRight h-67 w-full">
                 <img src={nelson} alt="Nelson Piquet" className='h-full w-full' />
               </div>
-              <div className="bottomRight px-8 py-8 gap-2 border border-[#282828]">
+              <div className="bottomRight px-8 py-8 gap-2 border border-[#282828] hover:bg-[#201F1F]">
                 <div className="top uppercase text-[#FFB4AA] font-[JetBrains_Mono] font-bold text-[12px] tracking-[1.2px]">formula 1</div>
                 <div className="title text-[#E5E2E1] font-[Anybody] font-bold text-[32px] uppercase italic">turbo era</div>
                 <div className="article text-[#E9BCB6] font-[Geist] text-[16px]">Le moteur M12/13, un monstre de 1500 ch qui a propulsé Nelson Piquet au titre mondial en 1983.</div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="bottom flex flex-col items-center py-20 gap-5.5 mb-24">
+          <div className="bottomLogo max-w-[60px] max-h-[60px]">
+            <img src={cup} alt="winning cup" className='w-full h-full' />
+          </div>
+          <div className="bottomTitle text-[#E5E2E1] font-[Anybody] text-[80px] font-extrabold tracking-[-3.2px] uppercase italic">écrivez l'histoire</div>
+          <div className="bottomArticle text-[#E9BCB6] font-[Geist] text-[18px] pt-[22px] pb-12">Rejoignez le M Club pour accéder à des événements exclusifs sur circuit et perpétuer la légende du sport automobile.</div>
+          <div className="bottomButton text-[#690003] font-[JetBrains_Mono] font-bold text-[18px]">
+            <Link className='becomeALegendButton uppercase px-12 py-5 bg-[#FFB4AA] hover:bg-[#0066B3] hover:text-[#E5E2E1]'>devenez une légende</Link>
           </div>
         </div>
       </div>
