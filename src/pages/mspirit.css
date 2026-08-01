@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.mline {
+  background: linear-gradient(to right, #0066B3, #282572, #E20613);
+}
