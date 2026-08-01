@@ -3,3 +3,19 @@
 .mline {
   background: linear-gradient(to right, #0066B3, #282572, #E20613);
 }
+
+.zoomInContainer {
+  overflow: hidden;
+}
+
+.zoomInContainer img {
+  transform: scale(1);
+
+  object-fit: cover;
+
+  transition: transform 500ms ease;
+}
+
+.zoomInContainer:hover img {
+  transform: scale(1.05);
+}
