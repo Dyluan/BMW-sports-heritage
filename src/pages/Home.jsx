@@ -10,10 +10,30 @@ import m1 from '../assets/m1-side.png';
 import e30 from '../assets/e30.png';
 import v12 from '../assets/v12lmr.png';
 import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 
 function Home() {
+  const rootRef = useRef(null);
+
+  useEffect(() => {
+    const items = rootRef.current?.querySelectorAll('.chronoItem, .fadeUp') ?? [];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    items.forEach((item) => observer.observe(item));
+    return () => observer.disconnect();
+  }, []);
+
   return(
-    <div className="main max-w-7xl mx-auto flex flex-col items-center justify-center">
+    <div className="main max-w-7xl mx-auto flex flex-col items-center justify-center" ref={rootRef}>
       <Header />
       <div className="bigImage relative w-full h-[800px] bg-cover bg-bottom" style={{ backgroundImage: `url(${bigBimmer})` }}>
         <div className="heroText h-full flex flex-col justify-end px-16 py-24">
@@ -42,7 +62,7 @@ function Home() {
       </div>
       {/* partie description */}
       <div className="descriptionSection w-full max-h-[742px]">
-        <div className="content flex flex-row px-16 py-32">
+        <div className="content fadeUp flex flex-row px-16 py-32">
           <div className="leftDescription max-w-[45%]">
             <div className="top font-[Anybody] font-bold text-[40px] text-[#E5E2E1]">Où l'ingénierie devient Légende.</div>
             <div className="middleTop mt-8 font-[Geist] text-[#E9BCB6] text-[16px]">BMW Motorsport n'est pas seulement une division de performance ; c'est un laboratoire d'émotions brutes et de précision chirurgicale. Née sur les circuits les plus exigeants du monde, la lettre "M" est devenue le symbole universel de la suprématie automobile.</div>
@@ -76,7 +96,7 @@ function Home() {
         </div>
         <div className="chronoContent relative flex flex-col">
           <div className="line absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-0.5 bg-[#343434]"></div>
-          <div className="chronoContent relative flex items-center">
+          <div className="chronoItem chronoItem--left relative flex items-center">
             <div className="left flex flex-col items-end max-w-[50%] w-[50%]">
               <div className="top text-[#FFB4AA] font-[JetBrains_Mono] text-2xl mb-2">1972</div>
               <div className="middle text-[#E5E2E1] font-[Anybody] font-bold text-[32px] mb-3">Création de BMW Motorsport</div>
@@ -89,7 +109,7 @@ function Home() {
               <img src={garage} alt="garage" />
             </div>
           </div>
-          <div className="chronoContent relative flex items-center pt-24">
+          <div className="chronoItem chronoItem--right relative flex items-center pt-24">
             <div className="left max-w-[50%] w-[50%] flex justify-end">
               <img src={m1} alt="m1 Procar" />
             </div>
@@ -102,7 +122,7 @@ function Home() {
               <div className="bottom font-[Geist] text-[#E9BCB6] text-[16px] text-left">La première voiture à porter fièrement le badge M. Un chef- d'œuvre à moteur central conçu pour la piste et la route.</div>
             </div>
           </div>
-          <div className="chronoContent relative flex items-center pt-24">
+          <div className="chronoItem chronoItem--left relative flex items-center pt-24">
             <div className="left flex flex-col items-end max-w-[50%] w-[50%]">
               <div className="top text-[#FFB4AA] font-[JetBrains_Mono] text-2xl mb-2">1987</div>
               <div className="middle text-[#E5E2E1] font-[Anybody] font-bold text-[32px] mb-3">M3 E30 : Reine du DTM</div>
@@ -115,7 +135,7 @@ function Home() {
               <img src={e30} alt="e30 DTM" />
             </div>
           </div>
-          <div className="chronoContent relative flex items-center pt-24">
+          <div className="chronoItem chronoItem--right relative flex items-center pt-24">
             <div className="left max-w-[50%] w-[50%] flex justify-end">
               <img src={v12} alt="v12 LMR" />
             </div>

@@ -46,8 +46,16 @@
     }
 }
 
-.chronoContent {
+.chronoItem {
+    opacity: 0;
+}
+
+.chronoItem--left.in-view {
     animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.chronoItem--right.in-view {
+    animation: slideInRight 0.8s ease-out forwards;
 }
 
 @keyframes slideInLeft {
@@ -57,6 +65,36 @@
     }
     to {
         transform: translateX(0); /* Ends at its normal position */
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100vw); /* Starts off-screen to the right */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Ends at its normal position */
+        opacity: 1;
+    }
+}
+
+.fadeUp {
+    opacity: 0;
+}
+
+.fadeUp.in-view {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
         opacity: 1;
     }
 }
