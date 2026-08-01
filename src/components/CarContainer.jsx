@@ -1,6 +1,7 @@
 import './carContainer.css';
+import { Link } from 'react-router-dom';
 
-function CarContainer({ image, date, title, description, power, speed }) {
+function CarContainer({ image, date, title, description, power, speed, url }) {
   return(
     <div className="mainCar border border-[#ffffff1a] max-w-[268px] bg-[#1E1E1E]">
       <div className="top">
@@ -27,7 +28,7 @@ function CarContainer({ image, date, title, description, power, speed }) {
         <div className="bottomLine bg-[#2F2F2F] h-0.25 w-full"></div>
       </div>
       <div className="bottom px-6 mt-8 mb-6">
-        <button className='uppercase text-[#FFB4AA] font-[JetBrains_Mono] text-[16px] px-16 py-4 border border-[#FFB4AA] hover:bg-[#FFB4AA] hover:text-[#181818] cursor-pointer'>Découvrir</button>
+        <Link to={url} className='uppercase text-[#FFB4AA] font-[JetBrains_Mono] text-[16px] px-16 py-4 border border-[#FFB4AA] hover:bg-[#FFB4AA] hover:text-[#181818] cursor-pointer'>Découvrir</Link>
       </div>
     </div>
   )

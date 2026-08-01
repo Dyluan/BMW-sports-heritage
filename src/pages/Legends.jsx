@@ -50,6 +50,7 @@ function Legends() {
             description={"La voiture de tourisme la plus victorieuse au monde. Une icône indétrônable du DTM."}
             power={"200"}
             speed={"235"}
+            url={"e30m3"}
           />
           <CarContainer 
             className="carContainer"
