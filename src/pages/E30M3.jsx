@@ -163,6 +163,7 @@ function E30M3() {
           </div>
         </div>
       </div>
+      <div className="modelSection px-16"></div>
       <Footer />
     </div>
   );
