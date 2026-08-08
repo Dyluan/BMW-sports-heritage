@@ -183,7 +183,7 @@ function E30M3() {
           <div className="top font-[Anybody] font-bold text-[40px] tracking-[-0.8px] ">Experience the Heritage</div>
           <div className="middle font-[Geist] text-[18px] ">Join the exclusive community of M enthusiasts and gain access to the full archives of BMW M Motorsport.</div>
           <div className="bottom mt-3">
-            <Link to="/legends" className="bg-[#E5E2E1] text-[#131313] font-[Geist] font-bold text-[12px] px-8 py-4 tracking-[1.2px] uppercase ">explore the archive</Link>
+            <Link to="/legends" className="bg-[#E5E2E1] text-[#131313] font-[Geist] font-bold text-[12px] px-8 py-4 tracking-[1.2px] uppercase hover:bg-[#E20613] hover:text-[#E5E2E1] ">explore the archive</Link>
           </div>
         </div>
       </div>

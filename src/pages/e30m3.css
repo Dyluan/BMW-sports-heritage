@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+
+.e30ImageContainer {
+  overflow: hidden;
+}
+
+.e30ImageContainer img {
+  transform: scale(1);
+
+  object-fit: cover;
+
+  transition: transform 500ms ease;
+}
+
+.e30ImageContainer:hover img {
+  transform: scale(1.05);
+}
