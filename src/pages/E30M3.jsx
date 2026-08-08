@@ -1,11 +1,13 @@
 import "./e30m3.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ModelViewer from "../components/ModelViewer";
 import video from "../assets/e30-video.mp4";
 import cup from "../assets/white-cup.png";
 import evo1 from '../assets/evo1.png';
 import evo2 from '../assets/evo2.jpg';
 import evo3 from '../assets/sport-evo.webp';
+import { Link } from "react-router-dom";
 
 function E30M3() {
   return (
@@ -163,7 +165,28 @@ function E30M3() {
           </div>
         </div>
       </div>
-      <div className="modelSection px-16"></div>
+      {/* <div
+        className="modelSection px-16 w-full h-[600px] flex items-center justify-center"
+        style={{
+          background:
+            "linear-gradient(135deg, #0066B3 0% 20%, #2D2A77 20% 40%, #E20613 40% 60%, #ffffff 60% 100%)",
+        }}
+      >
+        <ModelViewer
+          modelPath="/models/m3_model/scene.gltf"
+          className="w-full h-full"
+        />
+      </div> */}
+      <div className="bottomSection flex flex-row bg-[#131313] w-full px-16 py-48 ">
+        <div className="leftContainer bg-[#E20613] w-1 "></div>
+        <div className="rightContainer flex flex-col gap-6 text-[#E5E2E1] px-12 py-12 max-w-[60%] ">
+          <div className="top font-[Anybody] font-bold text-[40px] tracking-[-0.8px] ">Experience the Heritage</div>
+          <div className="middle font-[Geist] text-[18px] ">Join the exclusive community of M enthusiasts and gain access to the full archives of BMW M Motorsport.</div>
+          <div className="bottom mt-3">
+            <Link to="/legends" className="bg-[#E5E2E1] text-[#131313] font-[Geist] font-bold text-[12px] px-8 py-4 tracking-[1.2px] uppercase ">explore the archive</Link>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );
